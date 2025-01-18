@@ -423,9 +423,10 @@ export default function HomePage() {
 
   const tabs = [
     { id: 'welcome', label: 'Welcome' },
-    { id: 'about', label: 'About tech x africa ' },
+    { id: 'about', label: 'About' },
     { id: 'services', label: 'Services' },
     { id: 'inspired', label: 'Get inspired' },
+    { id: 'partner', label: 'Become a partner' },
     { id: 'explore', label: 'Explore devices' },
   ];
 
@@ -458,7 +459,7 @@ export default function HomePage() {
         </div>
 
         <button className="px-6 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors duration-200">
-          Get in Touch
+          Get A Quote
         </button>
       </nav>
 
