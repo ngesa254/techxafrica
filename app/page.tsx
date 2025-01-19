@@ -1,233 +1,3 @@
-// import Image from "next/image";
-
-// export default function Home() {
-//   return (
-//     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-//       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-//         <Image
-//           className="dark:invert"
-//           src="/next.svg"
-//           alt="Next.js logo"
-//           width={180}
-//           height={38}
-//           priority
-//         />
-//         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-//           <li className="mb-2">
-//             Get started by editing{" "}
-//             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-//               app/page.tsx
-//             </code>
-//             .
-//           </li>
-//           <li>Save and see your changes instantly.</li>
-//         </ol>
-
-//         <div className="flex gap-4 items-center flex-col sm:flex-row">
-//           <a
-//             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-//             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <Image
-//               className="dark:invert"
-//               src="/vercel.svg"
-//               alt="Vercel logomark"
-//               width={20}
-//               height={20}
-//             />
-//             Deploy now
-//           </a>
-//           <a
-//             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-//             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Read our docs
-//           </a>
-//         </div>
-//       </main>
-//       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-//         <a
-//           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-//           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <Image
-//             aria-hidden
-//             src="/file.svg"
-//             alt="File icon"
-//             width={16}
-//             height={16}
-//           />
-//           Learn
-//         </a>
-//         <a
-//           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-//           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <Image
-//             aria-hidden
-//             src="/window.svg"
-//             alt="Window icon"
-//             width={16}
-//             height={16}
-//           />
-//           Examples
-//         </a>
-//         <a
-//           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-//           href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <Image
-//             aria-hidden
-//             src="/globe.svg"
-//             alt="Globe icon"
-//             width={16}
-//             height={16}
-//           />
-//           Go to nextjs.org →
-//         </a>
-//       </footer>
-//     </div>
-//   );
-// }
-
-
-
-// "use client";
-
-// import Image from "next/image";
-// import Head from "next/head";
-
-// export default function Home() {
-//   return (
-//     <>
-//       {/* Basic SEO/head */}
-//       <Head>
-//         <title>Google Home Clone</title>
-//         <meta
-//           name="description"
-//           content="Google Home-like homepage clone using Next.js"
-//         />
-//       </Head>
-
-//       {/* Top Navigation Bar */}
-//       <header className="flex items-center justify-between px-8 py-4 bg-white shadow">
-//         <div className="flex items-center space-x-2">
-//           {/* Logo area -- you can replace with a real logo image */}
-//           <div className="w-6 h-6">
-//             <Image
-//               src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Google_Home_logo.png/640px-Google_Home_logo.png"
-//               alt="Google Home Logo"
-//               width={24}
-//               height={24}
-//             />
-//           </div>
-//           <span className="font-semibold text-lg">Google Home</span>
-//         </div>
-
-//         {/* Nav Links */}
-//         <nav className="hidden md:flex space-x-8 text-sm font-medium">
-//           <a href="#" className="hover:underline">
-//             Welcome
-//           </a>
-//           <a href="#" className="hover:underline">
-//             About Google Home
-//           </a>
-//           <a href="#" className="hover:underline">
-//             Get inspired
-//           </a>
-//           <a href="#" className="hover:underline">
-//             Explore devices
-//           </a>
-//         </nav>
-
-//         {/* CTA Button */}
-//         <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 text-sm">
-//           Go to Google Home
-//         </button>
-//       </header>
-
-//       {/* Hero Section */}
-//       <main className="relative w-full h-[80vh] overflow-hidden">
-//         {/* Background / Robot Vacuum Image */}
-//         <div className="absolute inset-0 -z-10">
-//           {/* Make sure you have a file named robot-vacuum.jpg in your /public/images folder */}
-//           <Image
-//             src="/images/robot-vacuum.jpg"
-//             alt="Robot Vacuum on Wooden Floor"
-//             fill
-//             style={{ objectFit: "cover", objectPosition: "center" }}
-//           />
-//         </div>
-
-//         {/* Overlay with gradient or slight darkening if needed */}
-//         <div className="absolute inset-0 bg-white/40" />
-
-//         {/* Content Container */}
-//         <div className="relative flex flex-col items-start justify-center h-full px-8">
-//           <h1 className="text-5xl md:text-7xl font-bold max-w-[600px] mb-6">
-//             Welcome to a more helpful home
-//           </h1>
-//           {/* If you want a subheading or descriptive text below */}
-//           {/* <p className="text-xl md:text-2xl max-w-[500px] mb-8">
-//             Subheading text here...
-//           </p> */}
-
-//           {/* Circular UI overlay (simulate the vacuum overlay circle) */}
-//           <div className="absolute right-8 bottom-16 w-40 h-40 rounded-full border-4 border-blue-300 flex flex-col items-center justify-center text-center bg-white/50 backdrop-blur-sm shadow-lg">
-//             {/* Inside the circle */}
-//             <div className="flex space-x-4 mb-2">
-//               {/* Square icon - Pause */}
-//               <div className="w-8 h-8 bg-blue-500 text-white flex items-center justify-center rounded-md cursor-pointer">
-//                 <svg
-//                   xmlns="http://www.w3.org/2000/svg"
-//                   className="h-5 w-5"
-//                   fill="none"
-//                   viewBox="0 0 24 24"
-//                   stroke="currentColor"
-//                 >
-//                   <rect x="6" y="4" width="4" height="16" />
-//                   <rect x="14" y="4" width="4" height="16" />
-//                 </svg>
-//               </div>
-
-//               {/* Play icon - or skip icon, etc. */}
-//               <div className="w-8 h-8 bg-blue-500 text-white flex items-center justify-center rounded-md cursor-pointer">
-//                 <svg
-//                   xmlns="http://www.w3.org/2000/svg"
-//                   className="h-5 w-5"
-//                   fill="none"
-//                   viewBox="0 0 24 24"
-//                   stroke="currentColor"
-//                 >
-//                   <path d="M5 3v18l15-9-15-9z" />
-//                 </svg>
-//               </div>
-//             </div>
-
-//             {/* Text under the icons */}
-//             <p className="text-sm font-medium text-gray-700">
-//               5 mins left
-//               <br />
-//               <span className="text-xs text-gray-500">Pause</span>
-//             </p>
-//           </div>
-//         </div>
-//       </main>
-//     </>
-//   );
-// }
-
-
 // "use client";
 
 // import Image from "next/image";
@@ -412,15 +182,199 @@
 
 
 
-// app/page.tsx
+// // app/page.tsx
+// 'use client';
+
+// import React, { useState } from 'react';
+// import { Home } from 'lucide-react';
+
+// export default function HomePage() {
+//   const [activeTab, setActiveTab] = useState('welcome');
+
+//   const tabs = [
+//     { id: 'welcome', label: 'Welcome' },
+//     { id: 'about', label: 'About' },
+//     { id: 'services', label: 'Services' },
+//     { id: 'inspired', label: 'Get inspired' },
+//     { id: 'partner', label: 'Become a partner' },
+//     { id: 'explore', label: 'Explore devices' },
+//   ];
+
+//   return (
+//     <div className="min-h-screen bg-white">
+//       {/* Navigation Bar */}
+//       <nav className="flex items-center justify-between px-6 py-4 bg-white border-b">
+//         <div className="flex items-center space-x-2">
+//           <Home className="w-8 h-8 text-blue-500" />
+//           <span className="text-xl font-medium">TECH X</span>
+//         </div>
+
+//         <div className="hidden md:flex">
+//           <div className="flex space-x-8">
+//             {tabs.map((tab) => (
+//               <button
+//                 key={tab.id}
+//                 onClick={() => setActiveTab(tab.id)}
+//                 className={`relative py-4 text-base transition-colors duration-200 ${
+//                   activeTab === tab.id ? 'text-blue-600' : 'text-gray-600 hover:text-gray-900'
+//                 }`}
+//               >
+//                 {tab.label}
+//                 {activeTab === tab.id && (
+//                   <div className="absolute bottom-0 left-0 w-full h-1 bg-blue-600" />
+//                 )}
+//               </button>
+//             ))}
+//           </div>
+//         </div>
+
+//         <button className="px-6 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors duration-200">
+//           Get A Quote
+//         </button>
+//       </nav>
+
+//       {/* Hero Section */}
+//       <div className="relative px-6 pt-16 pb-24 lg:px-8">
+//         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+//           {/* Left Column - Text */}
+//           <div className="space-y-8">
+//             <h1 className="text-6xl font-bold text-gray-900 leading-tight">
+//               Welcome to a more helpful home
+//             </h1>
+//             <p className="text-xl text-gray-600 max-w-lg">
+//               Discover smart devices that make your home more comfortable, 
+//               efficient, and connected than ever before.
+//             </p>
+//             <div className="flex space-x-4">
+//               <button className="px-8 py-3 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors duration-200">
+//                 Learn More
+//               </button>
+//               <button className="px-8 py-3 text-blue-600 border-2 border-blue-600 rounded-full hover:bg-blue-50 transition-colors duration-200">
+//                 Shop Devices
+//               </button>
+//             </div>
+//           </div>
+
+//           {/* Right Column - Device Display */}
+//           <div className="relative">
+//             <div className="relative w-full aspect-square">
+//               {/* Circular Progress Indicator */}
+//               <div className="absolute right-0 top-1/2 -translate-y-1/2 w-48 h-48">
+//                 <div className="relative w-full h-full">
+//                   <svg className="w-full h-full transform -rotate-90">
+//                     <circle
+//                       className="text-gray-200"
+//                       strokeWidth="6"
+//                       stroke="currentColor"
+//                       fill="transparent"
+//                       r="90"
+//                       cx="96"
+//                       cy="96"
+//                     />
+//                     <circle
+//                       className="text-blue-500"
+//                       strokeWidth="6"
+//                       strokeLinecap="round"
+//                       stroke="currentColor"
+//                       fill="transparent"
+//                       r="90"
+//                       cx="96"
+//                       cy="96"
+//                       strokeDasharray="565.48"
+//                       strokeDashoffset="141.37"
+//                     />
+//                   </svg>
+//                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+//                     <p className="text-sm text-gray-600">5 mins left</p>
+//                     <p className="text-xs text-gray-500">Pause</p>
+//                   </div>
+//                 </div>
+//               </div>
+              
+//               {/* Device Image Placeholder */}
+//               <div className="absolute inset-0 flex items-center justify-center">
+//                 <div className="w-64 h-64 bg-gray-200 rounded-full relative">
+//                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-blue-500 rounded-full" />
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
+// // START
+
+// 'use client';
+
+// import React, { useState } from 'react';
+// import NavigationBar from '../component/NavigationBar';
+// import Welcome from '../component/Welcome';
+
+// /**
+//  * HomePage is the main entry point for the Next.js application.
+//  * It manages the active tab state and renders the NavigationBar
+//  * and the Welcome (hero) components.
+//  */
+// export default function HomePage() {
+//   // State for currently active navigation tab
+//   const [activeTab, setActiveTab] = useState('welcome');
+
+//   // Define navigation tabs
+//   const tabs = [
+//     { id: 'welcome', label: 'Welcome' },
+//     { id: 'about', label: 'About' },
+//     { id: 'services', label: 'Services' },
+//     { id: 'inspired', label: 'Get inspired' },
+//     { id: 'partner', label: 'Become a partner' },
+//     { id: 'explore', label: 'Explore devices' },
+//   ];
+
+//   return (
+//     <div className="min-h-screen bg-white">
+//       {/* Navigation Bar */}
+//       <NavigationBar
+//         tabs={tabs}
+//         activeTab={activeTab}
+//         setActiveTab={setActiveTab}
+//       />
+
+//       {/* Welcome (Hero) Section */}
+//       <Welcome />
+//     </div>
+//   );
+// }
+
+
+
 'use client';
 
 import React, { useState } from 'react';
-import { Home } from 'lucide-react';
 
+/* 
+  Importing our components from the 'component' folder.
+  Ensure these files exist and are named exactly as imported.
+*/
+import NavigationBar from '../component/NavigationBar';
+import Welcome from '../component/Welcome';
+import AiSolutions from '../component/AiSolutions';
+import IotSolutions from '../component/IotSolutions';
+import ExtraComponent from '../component/ExtraComponent';
+
+/**
+ * HomePage is the main entry point for the Next.js application.
+ * It manages the active tab state and renders the NavigationBar,
+ * Welcome, AiSolutions, IotSolutions, and ExtraComponent sections.
+ */
 export default function HomePage() {
+  // State for currently active navigation tab
   const [activeTab, setActiveTab] = useState('welcome');
 
+  // Define navigation tabs
   const tabs = [
     { id: 'welcome', label: 'Welcome' },
     { id: 'about', label: 'About' },
@@ -433,104 +387,531 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation Bar */}
-      <nav className="flex items-center justify-between px-6 py-4 bg-white border-b">
-        <div className="flex items-center space-x-2">
-          <Home className="w-8 h-8 text-blue-500" />
-          <span className="text-xl font-medium">TECH X</span>
-        </div>
+      <NavigationBar
+        tabs={tabs}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
 
-        <div className="hidden md:flex">
-          <div className="flex space-x-8">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`relative py-4 text-base transition-colors duration-200 ${
-                  activeTab === tab.id ? 'text-blue-600' : 'text-gray-600 hover:text-gray-900'
-                }`}
-              >
-                {tab.label}
-                {activeTab === tab.id && (
-                  <div className="absolute bottom-0 left-0 w-full h-1 bg-blue-600" />
-                )}
-              </button>
-            ))}
-          </div>
-        </div>
+      {/* Welcome (Hero) Section */}
+      <Welcome />
 
-        <button className="px-6 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors duration-200">
-          Get A Quote
-        </button>
-      </nav>
+      {/* AI Solutions Section */}
+      <AiSolutions />
 
-      {/* Hero Section */}
-      <div className="relative px-6 pt-16 pb-24 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-          {/* Left Column - Text */}
-          <div className="space-y-8">
-            <h1 className="text-6xl font-bold text-gray-900 leading-tight">
-              Welcome to a more helpful home
-            </h1>
-            <p className="text-xl text-gray-600 max-w-lg">
-              Discover smart devices that make your home more comfortable, 
-              efficient, and connected than ever before.
-            </p>
-            <div className="flex space-x-4">
-              <button className="px-8 py-3 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors duration-200">
-                Learn More
-              </button>
-              <button className="px-8 py-3 text-blue-600 border-2 border-blue-600 rounded-full hover:bg-blue-50 transition-colors duration-200">
-                Shop Devices
-              </button>
-            </div>
-          </div>
+      {/* IoT Solutions Section */}
+      <IotSolutions />
 
-          {/* Right Column - Device Display */}
-          <div className="relative">
-            <div className="relative w-full aspect-square">
-              {/* Circular Progress Indicator */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-48 h-48">
-                <div className="relative w-full h-full">
-                  <svg className="w-full h-full transform -rotate-90">
-                    <circle
-                      className="text-gray-200"
-                      strokeWidth="6"
-                      stroke="currentColor"
-                      fill="transparent"
-                      r="90"
-                      cx="96"
-                      cy="96"
-                    />
-                    <circle
-                      className="text-blue-500"
-                      strokeWidth="6"
-                      strokeLinecap="round"
-                      stroke="currentColor"
-                      fill="transparent"
-                      r="90"
-                      cx="96"
-                      cy="96"
-                      strokeDasharray="565.48"
-                      strokeDashoffset="141.37"
-                    />
-                  </svg>
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                    <p className="text-sm text-gray-600">5 mins left</p>
-                    <p className="text-xs text-gray-500">Pause</p>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Device Image Placeholder */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 bg-gray-200 rounded-full relative">
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-blue-500 rounded-full" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Extra Section */}
+      <ExtraComponent />
     </div>
   );
 }
+
+
+
+// AISolutions component
+// 'use client';
+
+// import React, { useState } from 'react';
+// import Image from 'next/image';
+// import { Brain, Building2, Code, Binary, CircuitBoard } from 'lucide-react';
+
+// export default function HomePage() {
+//   const [hoveredCard, setHoveredCard] = useState(null);
+
+//   const solutions = [
+//     {
+//       id: 'enterprise',
+//       title: 'Enterprise AI',
+//       description: 'Moving beyond chatbots, enterprise AI equips companies to transform every corner of their business and drive meaningful results.',
+//       image: '/enterprise-ai.jpg',
+//       icon: Brain,
+//     },
+//     {
+//       id: 'smart-cities',
+//       title: 'Smart Cities',
+//       description: 'Municipalities can use AI to improve many facets of everyday life, from infrastructure and safety to EV charging and connected services.',
+//       image: '/smart-cities.jpg',
+//       icon: Building2,
+//     },
+//     {
+//       id: 'data-analytics',
+//       title: 'Data Analytics',
+//       description: 'Businesses and cities are awash with data. Advanced analytics uncovers insights and accelerates the decision-making process.',
+//       image: '/data-analytics.jpg',
+//       icon: Binary,
+//     },
+//     {
+//       id: 'iot',
+//       title: 'IoT & Digital Twin',
+//       description: 'From factory to farm to Fortune 500, IoT and digital twin technology helps monitor, refine and reinvent the enterprise.',
+//       image: '/iot.jpg',
+//       icon: CircuitBoard,
+//     },
+//     {
+//       id: 'software',
+//       title: 'Software Engineering',
+//       description: 'Our software experts go beyond coding. We build intelligence into cloud-based platforms that fuel innovation and growth.',
+//       image: '/software.jpg',
+//       icon: Code,
+//     },
+//   ];
+
+//   return (
+//     <div className="min-h-screen bg-[#2E1065] text-white">
+//       {/* Header Section */}
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+//         <h1 className="text-5xl font-bold mb-6 text-[#67E8F9]">
+//           Our AI Solutions
+//         </h1>
+//         <p className="text-xl max-w-4xl">
+//           Global enterprises and governments trust our AI and data solutions to address their most pressing challenges. We've spent a decade developing advanced tools that leverage technology for good, with an eye toward solving some of the world's biggest problems.
+//         </p>
+//       </div>
+
+//       {/* Solutions Grid */}
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+//         {/* Main Solutions */}
+//         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+//           {solutions.slice(0, 2).map((solution) => (
+//             <div
+//               key={solution.id}
+//               className="relative group"
+//               onMouseEnter={() => setHoveredCard(solution.id)}
+//               onMouseLeave={() => setHoveredCard(null)}
+//             >
+//               <div 
+//                 className={`relative rounded-lg overflow-hidden transition-all duration-300 ${
+//                   hoveredCard === solution.id ? 'ring-2 ring-[#67E8F9] animate-border-pulse' : ''
+//                 }`}
+//               >
+//                 <div className="aspect-video relative">
+//                   <Image
+//                     src={solution.image}
+//                     alt={solution.title}
+//                     fill
+//                     className="object-cover transition-transform duration-300 group-hover:scale-105"
+//                     priority={true}
+//                   />
+//                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300" />
+//                 </div>
+//                 <div className="p-6 bg-[#2E1065]/90 relative">
+//                   <div className="flex items-center gap-3">
+//                     <solution.icon className="w-8 h-8 text-[#67E8F9]" />
+//                     <h3 className="text-2xl font-semibold">{solution.title}</h3>
+//                   </div>
+//                   <p className="mt-3 text-gray-300">{solution.description}</p>
+//                 </div>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+
+//         {/* Additional Solutions */}
+//         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+//           {solutions.slice(2).map((solution) => (
+//             <div
+//               key={solution.id}
+//               className="relative group"
+//               onMouseEnter={() => setHoveredCard(solution.id)}
+//               onMouseLeave={() => setHoveredCard(null)}
+//             >
+//               <div 
+//                 className={`relative rounded-lg overflow-hidden transition-all duration-300 ${
+//                   hoveredCard === solution.id ? 'ring-2 ring-[#67E8F9] animate-border-pulse' : ''
+//                 }`}
+//               >
+//                 <div className="aspect-video relative">
+//                   <Image
+//                     src={solution.image}
+//                     alt={solution.title}
+//                     fill
+//                     className="object-cover transition-transform duration-300 group-hover:scale-105"
+//                   />
+//                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300" />
+//                 </div>
+//                 <div className="p-6 bg-[#2E1065]/90 relative">
+//                   <div className="flex items-center gap-3">
+//                     <solution.icon className="w-8 h-8 text-[#67E8F9]" />
+//                     <h3 className="text-xl font-semibold">{solution.title}</h3>
+//                   </div>
+//                   <p className="mt-3 text-sm text-gray-300">{solution.description}</p>
+//                 </div>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
+
+// // app/page.tsx remove
+// 'use client';
+
+// import React, { useState } from 'react';
+// import Image from 'next/image';
+// import { Brain, Building2, Code, Binary, CircuitBoard } from 'lucide-react';
+
+// export default function HomePage() {
+//   const [hoveredCard, setHoveredCard] = useState(null);
+
+//   const solutions = [
+//     {
+//       id: 'enterprise',
+//       title: 'Enterprise AI',
+//       description: 'Moving beyond chatbots, enterprise AI equips companies to transform every corner of their business and drive meaningful results.',
+//       image: '/enterprise-ai.jpg',
+//       icon: Brain,
+//     },
+//     {
+//       id: 'smart-cities',
+//       title: 'Smart Cities',
+//       description: 'Municipalities can use AI to improve many facets of everyday life, from infrastructure and safety to EV charging and connected services.',
+//       image: '/smart-cities.jpg',
+//       icon: Building2,
+//     },
+//     {
+//       id: 'data-analytics',
+//       title: 'Data Analytics',
+//       description: 'Businesses and cities are awash with data. Advanced analytics uncovers insights and accelerates the decision-making process.',
+//       image: '/data-analytics.jpg',
+//       icon: Binary,
+//     },
+//     {
+//       id: 'iot',
+//       title: 'IoT & Digital Twin',
+//       description: 'From factory to farm to Fortune 500, IoT and digital twin technology helps monitor, refine and reinvent the enterprise.',
+//       image: '/iot.jpg',
+//       icon: CircuitBoard,
+//     },
+//     {
+//       id: 'software',
+//       title: 'Software Engineering',
+//       description: 'Our software experts go beyond coding. We build intelligence into cloud-based platforms that fuel innovation and growth.',
+//       image: '/software.jpg',
+//       icon: Code,
+//     },
+//   ];
+
+//   return (
+//     <div className="min-h-screen bg-[#2E1065]">
+//       {/* Header Section */}
+//       <div className="max-w-7xl mx-auto px-8 pt-20 pb-16">
+//         <h1 className="text-[64px] font-bold mb-8 text-[#67E8F9] leading-tight">
+//           Our AI Solutions
+//         </h1>
+//         <p className="text-[20px] max-w-4xl text-white/90 leading-relaxed">
+//           Global enterprises and governments trust our AI and data solutions to address their most pressing challenges. We've spent a decade developing advanced tools that leverage technology for good, with an eye toward solving some of the world's biggest problems.
+//         </p>
+//       </div>
+
+//       {/* Solutions Grid */}
+//       <div className="max-w-7xl mx-auto px-8 pb-32">
+//         {/* Main Solutions */}
+//         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+//           {solutions.slice(0, 2).map((solution) => (
+//             <div
+//               key={solution.id}
+//               className="relative group"
+//               onMouseEnter={() => setHoveredCard(solution.id)}
+//               onMouseLeave={() => setHoveredCard(null)}
+//             >
+//               <div 
+//                 className={`relative rounded-lg overflow-hidden transition-all duration-500 ${
+//                   hoveredCard === solution.id ? 'outline outline-2 outline-[#67E8F9]' : ''
+//                 }`}
+//               >
+//                 <div className="aspect-[16/9] relative">
+//                   <Image
+//                     src={solution.image}
+//                     alt={solution.title}
+//                     fill
+//                     className="object-cover transition-transform duration-700 group-hover:scale-105"
+//                     priority={true}
+//                   />
+//                   <div className="absolute inset-0 bg-[#2E1065]/30 mix-blend-multiply" />
+//                 </div>
+//                 <div className="p-8 bg-[#2E1065] relative">
+//                   <div className="flex items-center gap-4">
+//                     <solution.icon className="w-10 h-10 text-[#67E8F9]" />
+//                     <h3 className="text-2xl font-semibold text-white">{solution.title}</h3>
+//                   </div>
+//                   <p className="mt-4 text-[17px] text-white/80 leading-relaxed">{solution.description}</p>
+//                 </div>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+
+//         {/* Additional Solutions */}
+//         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+//           {solutions.slice(2).map((solution) => (
+//             <div
+//               key={solution.id}
+//               className="relative group"
+//               onMouseEnter={() => setHoveredCard(solution.id)}
+//               onMouseLeave={() => setHoveredCard(null)}
+//             >
+//               <div 
+//                 className={`relative rounded-lg overflow-hidden transition-all duration-500 ${
+//                   hoveredCard === solution.id ? 'outline outline-2 outline-[#67E8F9]' : ''
+//                 }`}
+//               >
+//                 <div className="aspect-[16/9] relative">
+//                   <Image
+//                     src={solution.image}
+//                     alt={solution.title}
+//                     fill
+//                     className="object-cover transition-transform duration-700 group-hover:scale-105"
+//                   />
+//                   <div className="absolute inset-0 bg-[#2E1065]/30 mix-blend-multiply" />
+//                 </div>
+//                 <div className="p-6 bg-[#2E1065] relative">
+//                   <div className="flex items-center gap-3">
+//                     <solution.icon className="w-8 h-8 text-[#67E8F9]" />
+//                     <h3 className="text-xl font-semibold text-white">{solution.title}</h3>
+//                   </div>
+//                   <p className="mt-3 text-[15px] text-white/80 leading-relaxed">{solution.description}</p>
+//                 </div>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+// //IoT SOlutions component
+
+// 'use client';
+
+// import React, { useState, useCallback } from 'react';
+// import Image from 'next/image';
+// import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+
+// const slides = [
+//   {
+//     id: 1,
+//     title: 'Access your smart home wherever you roam',
+//     description: 'Smart home controls that are flexible and customizable for every user, on any device.',
+//     image: '/smart-home-access.jpg',
+//     bgColor: 'bg-[#f8f3f1]',
+//   },
+//   {
+//     id: 2,
+//     title: 'Google TV puts your smart home in the spotlight',
+//     description: 'Google TV Streamer ushers in new capabilities and control for your smart home',
+//     image: '/google-tv.jpg',
+//     bgColor: 'bg-[#f1f4f6]',
+//   },
+//   {
+//     id: 3,
+//     title: 'Smart home tips for stress-free school breaks',
+//     description: 'Google Home is your secret to thriving, not just surviving, when school\'s out for the kids.',
+//     image: '/school-breaks.jpg',
+//     bgColor: 'bg-[#f1f4f6]',
+//   },
+//   {
+//     id: 4,
+//     title: 'Spring 2024 Google Home Update',
+//     description: 'Enhanced controls and more.',
+//     image: '/spring-update.jpg',
+//     bgColor: 'bg-[#f8f3f1]',
+//   },
+//   {
+//     id: 5,
+//     title: 'Brighten up your pet\'s day',
+//     description: 'Learn how to create a pet-friendly smart home',
+//     image: '/pet-home.jpg',
+//     bgColor: 'bg-[#e8e8e8]',
+//   },
+//   {
+//     id: 6,
+//     title: 'Smart lighting is helpful lighting',
+//     description: 'Sleep better, feel safer, save energy',
+//     image: '/smart-lighting.jpg',
+//     bgColor: 'bg-[#f3f1f8]',
+//   },
+// ];
+
+// export default function HomePage() {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+//   const [isAnimating, setIsAnimating] = useState(false);
+
+//   const goToSlide = useCallback((index: number) => {
+//     if (isAnimating) return;
+//     setIsAnimating(true);
+//     setCurrentSlide(index);
+//     setTimeout(() => setIsAnimating(false), 500);
+//   }, [isAnimating]);
+
+//   const nextSlide = useCallback(() => {
+//     const nextIndex = (currentSlide + 2) % slides.length;
+//     goToSlide(nextIndex);
+//   }, [currentSlide, goToSlide]);
+
+//   const prevSlide = useCallback(() => {
+//     const prevIndex = currentSlide === 0 ? slides.length - 2 : currentSlide - 2;
+//     goToSlide(prevIndex);
+//   }, [currentSlide, goToSlide]);
+
+//   return (
+//     <div className="min-h-screen px-4 py-16 mx-auto max-w-[1400px]">
+//       {/* Carousel */}
+//       <div className="relative">
+//         {/* Navigation Buttons */}
+//         <button
+//           onClick={prevSlide}
+//           className="absolute left-[-20px] top-1/2 -translate-y-1/2 z-10 p-2 rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-colors"
+//           aria-label="Previous slides"
+//         >
+//           <ChevronLeft className="w-6 h-6" />
+//         </button>
+        
+//         <button
+//           onClick={nextSlide}
+//           className="absolute right-[-20px] top-1/2 -translate-y-1/2 z-10 p-2 rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-colors"
+//           aria-label="Next slides"
+//         >
+//           <ChevronRight className="w-6 h-6" />
+//         </button>
+
+//         {/* Slides Container */}
+//         <div className="grid grid-cols-2 gap-6">
+//           {slides.slice(currentSlide, currentSlide + 2).map((slide) => (
+//             <div
+//               key={slide.id}
+//               className={`rounded-[32px] overflow-hidden transition-all duration-500 ${slide.bgColor}`}
+//             >
+//               <div className="p-12 pb-0 space-y-4">
+//                 <h2 className="text-[32px] font-medium leading-tight">
+//                   {slide.title}
+//                 </h2>
+//                 <p className="text-gray-600 text-lg">
+//                   {slide.description}
+//                 </p>
+//                 <button className="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gray-300 text-sm font-medium hover:bg-gray-50 transition-colors">
+//                   Read more
+//                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+//                 </button>
+//               </div>
+//               <div className="relative h-[400px] mt-8">
+//                 <Image
+//                   src={slide.image}
+//                   alt={slide.title}
+//                   fill
+//                   className="object-cover"
+//                 />
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+
+//         {/* Dots Indicator */}
+//         <div className="flex justify-center gap-3 mt-12">
+//           {Array.from({ length: Math.ceil(slides.length / 2) }).map((_, index) => (
+//             <button
+//               key={index}
+//               onClick={() => goToSlide(index * 2)}
+//               className={`w-2 h-2 rounded-full transition-all duration-300 ${
+//                 Math.floor(currentSlide / 2) === index
+//                   ? 'bg-blue-600 w-4'
+//                   : 'bg-gray-300'
+//               }`}
+//               aria-label={`Go to slide ${index + 1}`}
+//             />
+//           ))}
+//         </div>
+
+//         {/* See All Button */}
+//         <div className="flex justify-center mt-8">
+//           <button className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors">
+//             See all
+//             <ArrowRight className="w-4 h-4" />
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
+//Extra component
+// 'use client';
+
+// import React from 'react';
+// import Image from 'next/image';
+// import { ArrowRight, Download } from 'lucide-react';
+
+// export default function Home() {
+//   return (
+//     <main className="min-h-screen p-4 md:p-8 max-w-[1400px] mx-auto">
+//       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+//         {/* Left Column */}
+//         <div className="relative rounded-[32px] bg-[#f8f3f1] overflow-hidden p-12">
+//           <div className="max-w-md">
+//             <h1 className="text-[40px] md:text-[48px] font-medium leading-tight mb-4">
+//               A smarter home starts with Google Home
+//             </h1>
+//             <p className="text-gray-600 text-lg mb-8">
+//               The complete solution to control and automate devices in your home.
+//               <sup className="text-xs ml-1">1</sup>
+//             </p>
+//             <button className="group inline-flex items-center gap-2 px-8 py-3 rounded-full border border-gray-300 hover:bg-white/50 transition-colors">
+//               Learn More
+//               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+//             </button>
+//           </div>
+          
+//           <div className="relative h-[400px] mt-8">
+//             <Image
+//               src="/family-couch.jpg"
+//               alt="Mother and daughter on yellow couch with smart home devices"
+//               fill
+//               className="object-cover rounded-2xl"
+//               priority
+//             />
+//           </div>
+//         </div>
+
+//         {/* Right Column */}
+//         <div className="relative rounded-[32px] bg-[#f1f4f9] overflow-hidden p-12">
+//           <div className="max-w-md">
+//             <h2 className="text-[40px] md:text-[48px] font-medium leading-tight mb-4">
+//               Your smart home, everywhere you go.
+//             </h2>
+//             <p className="text-gray-600 text-lg mb-8">
+//               See what's happening at home with a glance and avoid missing important moments.
+//               <sup className="text-xs ml-1">2</sup>
+//             </p>
+//             <button className="group inline-flex items-center gap-2 px-8 py-3 rounded-full bg-[#e8effe] hover:bg-[#d8e5fe] transition-colors">
+//               <Download className="w-4 h-4" />
+//               Download the app
+//             </button>
+//           </div>
+
+//           <div className="relative mt-12 flex justify-center">
+//             <div className="relative w-[280px] h-[560px]">
+//               <div className="absolute inset-0 -right-32 w-[600px] h-[600px] bg-[#e8effe] rounded-full -z-10" />
+//               <Image
+//                 src="/app-screen.png"
+//                 alt="Google Home app interface showing smart home controls"
+//                 fill
+//                 className="object-contain"
+//                 priority
+//               />
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </main>
+//   );
+// }
