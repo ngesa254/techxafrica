@@ -363,7 +363,7 @@ import NavigationBar from '../component/NavigationBar';
 import Welcome from '../component/Welcome';
 import AiSolutions from '../component/AiSolutions';
 import IotSolutions from '../component/IotSolutions';
-import ExtraComponent from '../component/ExtraComponent';
+// import ExtraComponent from '../component/ExtraComponent';
 
 /**
  * HomePage is the main entry point for the Next.js application.
