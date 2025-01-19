@@ -430,7 +430,7 @@ export default function AiSolutions() {
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         <h1 className="text-5xl font-bold mb-6 text-[#67E8F9]">
-          Our AI Solutions
+        Your Agentic AI future begins here:
         </h1>
         <p className="text-xl max-w-4xl">
           Global enterprises and governments trust our AI and data solutions to address
