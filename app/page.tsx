@@ -378,7 +378,7 @@ export default function HomePage() {
   const tabs = [
     { id: 'welcome', label: 'Welcome' },
     { id: 'about', label: 'About' },
-    { id: 'services', label: 'Digital Services' },
+    { id: 'services', label: 'Digital services' },
     { id: 'inspired', label: 'Get inspired' },
     { id: 'partner', label: 'Become a partner' },
     { id: 'explore', label: 'Explore devices' },
@@ -403,7 +403,7 @@ export default function HomePage() {
       <IotSolutions />
 
       {/* Extra Section */}
-      <ExtraComponent />
+      {/* <ExtraComponent /> */}
     </div>
   );
 }
