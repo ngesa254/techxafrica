@@ -16,7 +16,7 @@ export default function ExtraComponent() {
         <div className="relative rounded-[32px] bg-[#f8f3f1] overflow-hidden p-12">
           <div className="max-w-md">
             <h1 className="text-[40px] md:text-[48px] font-medium leading-tight mb-4">
-              A smarter home starts with Google Home
+              A smarter home starts with TECH X
             </h1>
             <p className="text-gray-600 text-lg mb-8">
               The complete solution to control and automate devices in your home.
@@ -61,7 +61,7 @@ export default function ExtraComponent() {
               <div className="absolute inset-0 -right-32 w-[600px] h-[600px] bg-[#e8effe] rounded-full -z-10" />
               <Image
                 src="/app-screen.png"
-                alt="Google Home app interface showing smart home controls"
+                alt="TECH X app interface showing smart home controls"
                 fill
                 className="object-contain"
                 priority

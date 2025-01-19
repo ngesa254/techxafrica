@@ -24,9 +24,9 @@ export default function IotSolutions() {
     },
     {
       id: 2,
-      title: 'Google TV puts your smart home in the spotlight',
+      title: 'TV puts your smart home in the spotlight',
       description:
-        'Google TV Streamer ushers in new capabilities and control for your smart home',
+        'TV Streamer ushers in new capabilities and control for your smart home',
       image: '/google-tv.jpg',
       bgColor: 'bg-[#f1f4f6]',
     },
@@ -34,13 +34,13 @@ export default function IotSolutions() {
       id: 3,
       title: "Smart home tips for stress-free school breaks",
       description:
-        "Google Home is your secret to thriving, not just surviving, when school's out for the kids.",
+        "Home is your secret to thriving, not just surviving, when school's out for the kids.",
       image: '/school-breaks.jpg',
       bgColor: 'bg-[#f1f4f6]',
     },
     {
       id: 4,
-      title: 'Spring 2024 Google Home Update',
+      title: 'Spring 2024  Home Update',
       description: 'Enhanced controls and more.',
       image: '/spring-update.jpg',
       bgColor: 'bg-[#f8f3f1]',
