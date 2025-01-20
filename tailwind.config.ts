@@ -59,6 +59,38 @@
 
 
 
+// import type { Config } from "tailwindcss";
+
+// const config: Config = {
+//   content: [
+//     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+//     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+//     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+//   ],
+//   theme: {
+//     extend: {
+//       colors: {
+//         background: "var(--background)",
+//         foreground: "var(--foreground)",
+//       },
+//       animation: {
+//         'border-pulse': 'borderPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+//       },
+//       keyframes: {
+//         borderPulse: {
+//           '0%, 100%': { borderColor: 'rgba(103, 232, 249, 0.1)' },
+//           '50%': { borderColor: 'rgba(103, 232, 249, 1)' },
+//         },
+//       },
+//     },
+//   },
+//   plugins: [],
+// } satisfies Config;
+
+// export default config;
+
+
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -72,15 +104,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-      },
-      animation: {
-        'border-pulse': 'borderPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-      },
-      keyframes: {
-        borderPulse: {
-          '0%, 100%': { borderColor: 'rgba(103, 232, 249, 0.1)' },
-          '50%': { borderColor: 'rgba(103, 232, 249, 1)' },
-        },
+        'google-blue': '#1a73e8',
       },
     },
   },

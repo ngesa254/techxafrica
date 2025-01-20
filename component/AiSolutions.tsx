@@ -392,8 +392,8 @@ export default function AiSolutions() {
       icon: Building2,
     },
     {
-      id: 'smart-homes',
-      title: 'Smart Homes',
+      id: 'smart-buildings',
+      title: 'Smart Buildings',
       description:
         'Creating intelligent living spaces that adapt to residents\'s needs, integrating automation, security, and energy management for enhanced comfort and efficiency.',
       image: '/smart-house.jpg',

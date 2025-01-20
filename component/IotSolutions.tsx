@@ -159,13 +159,6 @@ export default function IotSolutions() {
           ))}
         </div>
 
-        {/* See All Button */}
-        <div className="flex justify-center mt-8">
-          <button className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors">
-            See all
-            <ArrowRight className="w-4 h-4" />
-          </button>
-        </div>
       </div>
     </div>
   );
