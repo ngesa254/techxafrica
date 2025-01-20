@@ -40,8 +40,8 @@ export default function DevicesSection() {
         </h1>
         
         <p className="text-xl text-gray-700 leading-relaxed mb-10 max-w-3xl mx-auto">
-          Enjoy seamless compatibility across all of your favorite Google
-          devices, and thousands of Works with Google Home partner brands.
+          Enjoy seamless compatibility across all of your favorite Smart
+          devices, and thousands of Works with TECH X partner brands.
         </p>
 
         <button 
