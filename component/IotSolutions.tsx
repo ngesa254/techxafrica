@@ -65,7 +65,7 @@ export default function IotSolutions() {
   const slides = [
     {
       id: 1,
-      title: 'Home Security',
+      title: 'Security',
       description:
         'Tech X is the one you can rely on for smart home security. We offer monitoring, intrusion alarming, environmental protection to address safety concerns.',
       image: '/home-security1.jpg',
@@ -73,20 +73,21 @@ export default function IotSolutions() {
     },
     {
       id: 2,
-      title: 'Industrial Application',
+      title: 'Energy Management',
       description:
-        'Tech X commit to deliver professional solutions to the industries, addressing different industrial requirement.',
-      image: '/energy.jpg',
+        'Comprehensive energy control system. Automate conference room release, manage roles easily, and monitor real-time lighting and motion on a live map',
+      image: '/alarm.jpg',
       bgColor: 'bg-[#f1f4f6]',
     },
     {
       id: 3,
-      title: 'Enterprise - Energy Management',
+      title: 'Industrial Application',
       description:
-        'Energy management and monitor, turn off all the air-con & lights at one time, saving labor cost. Integration with conference room reservation system, automatically releasing the conference if there is no people inside. Region and Role management, easy for the operator to manage. Live lighting and motion status on map.',
-      image: '/school-breaks.jpg',
+        'Tech X commit to deliver professional solutions to the industries, addressing different industrial requirement.',
+      image: '/energy1.jpg',
       bgColor: 'bg-[#f1f4f6]',
     },
+ 
     // {
     //   id: 3,
     //   title: 'Enterprise - Energy Management',
@@ -100,21 +101,31 @@ export default function IotSolutions() {
       title: 'Real Estate',
       description:
         'Alarm monitoring when home owner is away. Public area ernegy management. APIs for property management system.',
-      image: '/spring-update.jpg',
+      image: '/estate2.jpg',
       bgColor: 'bg-[#f8f3f1]',
     },
+    // {
+    //   id: 5,
+    //   title: 'Hotel',
+    //   description:
+    //     'Dedicated QR code to control smart devices in your room after check-in. Automatically shut down lights and air-cons when away. APIs for hotel management system.',
+    //   image: '/hotel.jpg',
+    //   bgColor: 'bg-[#e8e8e8]',
+    // },
+
     {
       id: 5,
       title: 'Hotel',
       description:
-        'Dedicated QR code to control smart devices in your room after check-in. Automatically shut down lights and air-cons when away. APIs for hotel management system.',
-      image: '/pet-home.jpg',
+        'Transform guest experiences with our comprehensive smart hotel solutions. Features include personalized QR codes for instant room device control, intelligent occupancy-based automation, and seamless integration with major hotel management systems. Enhanced guest comfort with smart scene controls and automated temperature adjustment.',
+      image: '/hotel.jpg',
       bgColor: 'bg-[#e8e8e8]',
     },
     {
       id: 6,
-      title: 'Smart lighting is helpful lighting',
-      description: 'Sleep better, feel safer, save energy',
+      title: 'Electronics Production',
+      description:
+        'From visionary concepts to fully functional products, we specialize in designing and manufacturing custom hardware tailored to your specific needs. Our services include end-to-end development, ensuring that your innovative ideas are transformed into connected, scalable solutions that align with your strategic goals.',
       image: '/smart-lighting.jpg',
       bgColor: 'bg-[#f3f1f8]',
     },
