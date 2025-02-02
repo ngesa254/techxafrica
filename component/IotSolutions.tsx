@@ -12,43 +12,102 @@ export default function IotSolutions() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // Slides data
+  // // Slides data
+  // const slides = [
+  //   {
+  //     id: 1,
+  //     title: 'Access your smart home wherever you roam',
+  //     description:
+  //       'Smart home controls that are flexible and customizable for every user, on any device.',
+  //     image: '/smart-home-access.jpg',
+  //     bgColor: 'bg-[#f8f3f1]',
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'TV puts your smart home in the spotlight',
+  //     description:
+  //       'TV Streamer ushers in new capabilities and control for your smart home',
+  //     image: '/google-tv.jpg',
+  //     bgColor: 'bg-[#f1f4f6]',
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Smart home tips for stress-free school breaks",
+  //     description:
+  //       "Home is your secret to thriving, not just surviving, when school's out for the kids.",
+  //     image: '/school-breaks.jpg',
+  //     bgColor: 'bg-[#f1f4f6]',
+  //   },
+  //   {
+  //     id: 4,
+  //     title: 'Spring 2024  Home Update',
+  //     description: 'Enhanced controls and more.',
+  //     image: '/spring-update.jpg',
+  //     bgColor: 'bg-[#f8f3f1]',
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Brighten up your pet's day",
+  //     description: 'Learn how to create a pet-friendly smart home',
+  //     image: '/pet-home.jpg',
+  //     bgColor: 'bg-[#e8e8e8]',
+  //   },
+  //   {
+  //     id: 6,
+  //     title: 'Smart lighting is helpful lighting',
+  //     description: 'Sleep better, feel safer, save energy',
+  //     image: '/smart-lighting.jpg',
+  //     bgColor: 'bg-[#f3f1f8]',
+  //   },
+  // ];
+
+
   const slides = [
     {
       id: 1,
-      title: 'Access your smart home wherever you roam',
+      title: 'Home Security',
       description:
-        'Smart home controls that are flexible and customizable for every user, on any device.',
-      image: '/smart-home-access.jpg',
+        'Tech X is the one you can rely on for smart home security. We offer monitoring, intrusion alarming, environmental protection to address safety concerns.',
+      image: '/home-security1.jpg',
       bgColor: 'bg-[#f8f3f1]',
     },
     {
       id: 2,
-      title: 'TV puts your smart home in the spotlight',
+      title: 'Industrial Application',
       description:
-        'TV Streamer ushers in new capabilities and control for your smart home',
-      image: '/google-tv.jpg',
+        'Tech X commit to deliver professional solutions to the industries, addressing different industrial requirement.',
+      image: '/energy.jpg',
       bgColor: 'bg-[#f1f4f6]',
     },
     {
       id: 3,
-      title: "Smart home tips for stress-free school breaks",
+      title: 'Enterprise - Energy Management',
       description:
-        "Home is your secret to thriving, not just surviving, when school's out for the kids.",
+        'Energy management and monitor, turn off all the air-con & lights at one time, saving labor cost. Integration with conference room reservation system, automatically releasing the conference if there is no people inside. Region and Role management, easy for the operator to manage. Live lighting and motion status on map.',
       image: '/school-breaks.jpg',
       bgColor: 'bg-[#f1f4f6]',
     },
+    // {
+    //   id: 3,
+    //   title: 'Enterprise - Energy Management',
+    //   description:
+    //     'Optimize energy use by turning off all air-conditioning and lights at once, reducing labor costs. Seamless integration with conference room reservation systems ensures automatic room release if unoccupied. Region and role-based management simplifies operations, while live lighting and motion status updates provide real-time monitoring.',
+    //   image: '/school-breaks.jpg',
+    //   bgColor: 'bg-[#f1f4f6]',
+    // },
     {
       id: 4,
-      title: 'Spring 2024  Home Update',
-      description: 'Enhanced controls and more.',
+      title: 'Real Estate',
+      description:
+        'Alarm monitoring when home owner is away. Public area ernegy management. APIs for property management system.',
       image: '/spring-update.jpg',
       bgColor: 'bg-[#f8f3f1]',
     },
     {
       id: 5,
-      title: "Brighten up your pet's day",
-      description: 'Learn how to create a pet-friendly smart home',
+      title: 'Hotel',
+      description:
+        'Dedicated QR code to control smart devices in your room after check-in. Automatically shut down lights and air-cons when away. APIs for hotel management system.',
       image: '/pet-home.jpg',
       bgColor: 'bg-[#e8e8e8]',
     },
