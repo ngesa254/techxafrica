@@ -90,7 +90,7 @@ export default function NavigationBar({
       {/* Logo Section */}
       <div className="flex items-center space-x-2">
         <Home className="w-8 h-8 text-blue-500" />
-        <span className="text-xl font-medium">TECH X</span>
+        <span className="text-xl font-medium">TECH X </span>
       </div>
 
       {/* Navigation Tabs (visible on md+ screens) */}
