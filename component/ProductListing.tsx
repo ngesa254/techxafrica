@@ -8316,9 +8316,170 @@
 
 
 
+// 'use client';
+
+// import React, { useState, useEffect } from 'react';
+// import { ChevronDown, Filter, ShoppingCart, Check, X, Trash2, Plus, Minus } from 'lucide-react';
+
+// interface Product {
+//   id: number;
+//   name: string;
+//   fullName?: string;
+//   price: number;
+//   displayPrice: string;
+//   originalPrice?: string;
+//   discount?: string;
+//   image: string;
+//   category: string;
+// }
+
+// const ProductListing = () => {
+//   const [filters, setFilters] = useState({
+//     price: false,
+//     storage: false,
+//     camera: false,
+//     display: false,
+//     brand: false
+//   });
+
+//   const [showCheckout, setShowCheckout] = useState(false);
+//   const [checkoutStep, setCheckoutStep] = useState(1);
+//   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+//   const [quantity, setQuantity] = useState(1);
+//   const [selectedPayment, setSelectedPayment] = useState('');
+//   const [deliveryOption, setDeliveryOption] = useState('home');
+//   const [currentSearchIndex, setCurrentSearchIndex] = useState(0);
+
+//   const searchTexts = [
+//     "iphones 11",
+//     "iphones 15 pro max", 
+//     "nikon camera",
+//     "samsung galaxy s24",
+//     "macbook pro",
+//     "drone 4k",
+//     "apple watch",
+//     "samsung mobile phone"
+//   ];
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrentSearchIndex((prev) => (prev + 1) % searchTexts.length);
+//     }, 2000);
+    
+//     return () => clearInterval(interval);
+//   }, []);
+
+//   const handleBuyNow = (product: Product) => {
+//     setSelectedProduct(product);
+//     setShowCheckout(true);
+//     setCheckoutStep(1);
+//   };
+
+//   const nextStep = () => {
+//     if (checkoutStep < 4) {
+//       setCheckoutStep(checkoutStep + 1);
+//     }
+//   };
+
+//   const closeCheckout = () => {
+//     setShowCheckout(false);
+//     setCheckoutStep(1);
+//     setSelectedProduct(null);
+//     setQuantity(1);
+//     setSelectedPayment('');
+//   };
+
+//   const getStepTitle = (step: number) => {
+//     switch(step) {
+//       case 1: return 'Cart';
+//       case 2: return 'Shipping';
+//       case 3: return 'Payment';
+//       case 4: return 'Thank You';
+//       default: return '';
+//     }
+//   };
+
+//   const calculateTotal = () => {
+//     if (!selectedProduct) return 0;
+//     const subtotal = selectedProduct.price * quantity;
+//     const shipping = 250;
+//     return subtotal + shipping;
+//   };
+
+//   const toggleFilter = (filterName: string) => {
+//     setFilters(prev => ({
+//       ...prev,
+//       [filterName]: !prev[filterName]
+//     }));
+//   };
+
+//   const products: Product[] = [
+//     {
+//       id: 1,
+//       name: "Freestyle -",
+//       price: 167995,
+//       displayPrice: "KES 167,995",
+//       image: "https://placehold.co/300x300/E0E0E0/5B3A8E?text=Projector",
+//       category: "projector"
+//     },
+//     {
+//       id: 2,
+//       name: "Samsung Galaxy A15 - 6.5\"",
+//       fullName: "Samsung Galaxy A15 - 6.5\" - 128GB ROM - 4GB RAM - Dual SIM - 4G",
+//       price: 29499,
+//       displayPrice: "KES 29,499",
+//       image: "https://placehold.co/300x300/E0E0E0/5B3A8E?text=Galaxy+A15",
+//       category: "phone"
+//     },
+//     {
+//       id: 3,
+//       name: "Samsung Galaxy A35 5G - 6.6\"",
+//       fullName: "Samsung Galaxy A35 5G - 6.6\" - 128GB ROM - 6GB RAM - Dual SIM",
+//       price: 39585,
+//       displayPrice: "KES 39,585",
+//       image: "https://placehold.co/300x300/E0E0E0/5B3A8E?text=Galaxy+A35",
+//       category: "phone"
+//     },
+//     {
+//       id: 4,
+//       name: "Samsung Galaxy S24 Ultra",
+//       fullName: "Samsung Galaxy S24 Ultra - 6.8\" - 512GB ROM - 12GB RAM",
+//       price: 134945,
+//       displayPrice: "KES 134,945",
+//       originalPrice: "KES 165,650",
+//       discount: "19% Off",
+//       image: "https://placehold.co/300x300/E0E0E0/5B3A8E?text=Galaxy+S24+Ultra",
+//       category: "phone"
+//     },
+//     {
+//       id: 5,
+//       name: "Samsung Galaxy S24 Ultra",
+//       fullName: "Samsung Galaxy S24 Ultra - 6.8\" - 512GB ROM - 12GB RAM",
+//       price: 134945,
+//       displayPrice: "KES 134,945",
+//       originalPrice: "KES 165,650",
+//       discount: "19% Off",
+//       image: "https://placehold.co/300x300/E0E0E0/5B3A8E?text=Galaxy+S24+Ultra",
+//       category: "phone"
+//     },
+//     {
+//       id: 6,
+//       name: "Samsung Galaxy Z Fold 6 - 7.6\"",
+//       fullName: "Samsung Galaxy Z Fold 6 - 7.6\" - 12GB RAM - 512GB ROM",
+//       price: 194979,
+//       displayPrice: "KES 194,979",
+//       originalPrice: "KES 253,344",
+//       discount: "23% Off",
+//       image: "https://placehold.co/300x300/E0E0E0/5B3A8E?text=Galaxy+Z+Fold+6",
+//       category: "phone"
+//     }
+//   ];
+
+
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { ChevronDown, Filter, ShoppingCart, Check, X, Trash2, Plus, Minus } from 'lucide-react';
 
 interface Product {
@@ -8333,8 +8494,18 @@ interface Product {
   category: string;
 }
 
+/** --------- ONLY CHANGE: add a type for the filters object ---- */
+type Filters = {
+  price: boolean;
+  storage: boolean;
+  camera: boolean;
+  display: boolean;
+  brand: boolean;
+};
+/** ---------------------------------------------------------------- */
+
 const ProductListing = () => {
-  const [filters, setFilters] = useState({
+  const [filters, setFilters] = useState<Filters>({
     price: false,
     storage: false,
     camera: false,
@@ -8352,7 +8523,7 @@ const ProductListing = () => {
 
   const searchTexts = [
     "iphones 11",
-    "iphones 15 pro max", 
+    "iphones 15 pro max",
     "nikon camera",
     "samsung galaxy s24",
     "macbook pro",
@@ -8365,7 +8536,7 @@ const ProductListing = () => {
     const interval = setInterval(() => {
       setCurrentSearchIndex((prev) => (prev + 1) % searchTexts.length);
     }, 2000);
-    
+
     return () => clearInterval(interval);
   }, []);
 
@@ -8390,7 +8561,7 @@ const ProductListing = () => {
   };
 
   const getStepTitle = (step: number) => {
-    switch(step) {
+    switch (step) {
       case 1: return 'Cart';
       case 2: return 'Shipping';
       case 3: return 'Payment';
@@ -8406,12 +8577,14 @@ const ProductListing = () => {
     return subtotal + shipping;
   };
 
-  const toggleFilter = (filterName: string) => {
+  /** --------- ONLY CHANGE: constrain filterName to valid keys ---- */
+  const toggleFilter = (filterName: keyof Filters) => {
     setFilters(prev => ({
       ...prev,
       [filterName]: !prev[filterName]
     }));
   };
+  /** ---------------------------------------------------------------- */
 
   const products: Product[] = [
     {
@@ -8419,7 +8592,7 @@ const ProductListing = () => {
       name: "Freestyle -",
       price: 167995,
       displayPrice: "KES 167,995",
-      image: "https://placehold.co/300x300/E0E0E0/5B3A8E?text=Projector",
+      image: "/freestyle.jpg",
       category: "projector"
     },
     {
@@ -8428,7 +8601,7 @@ const ProductListing = () => {
       fullName: "Samsung Galaxy A15 - 6.5\" - 128GB ROM - 4GB RAM - Dual SIM - 4G",
       price: 29499,
       displayPrice: "KES 29,499",
-      image: "https://placehold.co/300x300/E0E0E0/5B3A8E?text=Galaxy+A15",
+      image: "/samsung_1.jpg",
       category: "phone"
     },
     {
@@ -8437,7 +8610,7 @@ const ProductListing = () => {
       fullName: "Samsung Galaxy A35 5G - 6.6\" - 128GB ROM - 6GB RAM - Dual SIM",
       price: 39585,
       displayPrice: "KES 39,585",
-      image: "https://placehold.co/300x300/E0E0E0/5B3A8E?text=Galaxy+A35",
+      image: "/samsung_2.jpg",
       category: "phone"
     },
     {
@@ -8448,7 +8621,7 @@ const ProductListing = () => {
       displayPrice: "KES 134,945",
       originalPrice: "KES 165,650",
       discount: "19% Off",
-      image: "https://placehold.co/300x300/E0E0E0/5B3A8E?text=Galaxy+S24+Ultra",
+      image: "/samsung_3.jpg",
       category: "phone"
     },
     {
@@ -8459,7 +8632,7 @@ const ProductListing = () => {
       displayPrice: "KES 134,945",
       originalPrice: "KES 165,650",
       discount: "19% Off",
-      image: "https://placehold.co/300x300/E0E0E0/5B3A8E?text=Galaxy+S24+Ultra",
+      image: "/samsung_4.jpg",
       category: "phone"
     },
     {
@@ -8470,11 +8643,10 @@ const ProductListing = () => {
       displayPrice: "KES 194,979",
       originalPrice: "KES 253,344",
       discount: "23% Off",
-      image: "https://placehold.co/300x300/E0E0E0/5B3A8E?text=Galaxy+Z+Fold+6",
+      image: "/samsung_5.jpg",
       category: "phone"
     }
   ];
-
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
       {/* Checkout Modal */}
